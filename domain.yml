@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - enquiry_data_science
+  - prerequisites
+  - education
+  - programming_languages
+  - skills
+  - fee
+  - salary
+
+responses:
+  utter_greet:
+  - text: "Hey! I am Data Science admission assistant bot,how may i help you?"
+
+  utter_data_science:
+  - text: "Data science is the study of data to extract meaningful insights for business.
+          It is a multidisciplinary approach that combines principles and practices from 
+          the fields of mathematics, statistics, artificial intelligence, and computer engineering
+          to analyze large amounts of data. This analysis helps data scientists to ask and answer
+          questions like what happened, why it happened, what will happen, and what can be done with the results."
+
+  utter_prerequisites:
+  - text: "Prerequisites for data science can include:
+          \n Mathematics, like probability, statistics, algebra, and calculus
+          \n Object-oriented programming languages like Java, C, or Python
+          \n Structured Query Language (SQL) for database queries"
+
+  utter_education:
+  - text: "Most data scientist roles will require at least a Bachelor's degree.
+           Degrees in technical fields like computer science and statistics may be preferred,
+           as well as advanced degrees like Ph.D.s and Master’s degrees.
+          \n However, advanced degrees are generally not strictly required 
+          (even when it says they are in the job posting)."
+
+  utter_programming_languages:
+  - text: " top data science programming languages for 2023
+            \n python : Python is the most widely used data science programming language in the world today. It is an open-source, easy-to-use language .
+            \n R : R is a high-level programming language built by statisticians. The open-source language and software are typically used for statistical computing and graphics.
+            \n SQL : Over the years, Structured Query Language or SQL has become a popular programming language for managing data. Although not exclusively used for data science operations, knowledge of SQL tables and queries can help data scientists while dealing with database management systems. "
+
+
+  utter_skills:
+  - text: " 7 essential skills for a data scientist :
+          \n 1. Programming
+          \n 2. Statistics and probability
+          \n 3. Data wrangling and database management
+          \n 4. Machine learning and deep learning
+          \n 5. Data visualization
+          \n 6. Cloud computing
+          \n 7. Interpersonal skills
+          \n for more visit https://www.coursera.org/articles/data-scientist-skills "
+
+  utter_fee:
+  - text: "The average total fee for UG courses is approximately 1.5 lac. "
+
+
+  utter_salary:
+  - text: "Data Scientist salary in India ranges between ₹ 3.6 Lakhs to ₹ 25.4 Lakhs with an average annual salary of ₹ 10.0 Lakhs"
+
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

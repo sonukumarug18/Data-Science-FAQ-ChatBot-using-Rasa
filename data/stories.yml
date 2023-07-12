@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: enquiry path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enquiry_data_science
+  - action: utter_data_science
+  - intent: prerequisites
+  - action: utter_prerequisites
+  - intent: education
+  - action: utter_education
+  - intent: programming_languages
+  - action: utter_programming_languages
+  - intent: skills
+  - action: utter_skills
+  - intent: fee
+  - action: utter_fee
+  - intent: salary
+  - action: utter_salary
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
